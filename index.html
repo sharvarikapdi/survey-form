@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./form.css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="heading">
+          <span class="twitter-logo"></span>
+          <h1 id="title">
+            Twitter feedback form
+          </h1>
+          <div >
+            <p id="description">
+              Help us improve with your feedback.
+            </p>
+          </div>
+        </div>
+        <div class="form-holder">
+          <form id="survey-form" action="index.html" method="post">
+            <label for="name" id="name-label"> Name:</label><input type="text" name="name" value="" id="name" placeholder="John Doe" required>
+            <label for="email" id="email-label">Email : </label><input type="email" name="email" value="" id="email" placeholder="john.doe@gmail.com" required>
+            <label for="number" id="number-label">Age: </label><input type="number" id="number" name="Age" value="" min="0" max="105" placeholder="25" required>
+            <label for="">Rate your overall experience with Twitter : </label>
+            <input type="radio" name="experience" value="5">Excellent</input>
+            <input type="radio" name="experience" value="4">Very Good</input>
+            <input type="radio" name="experience" value="3">Average</input>
+            <input type="radio" name="experience" value="2">Poor</input>
+            <input type="radio" name="experience" value="1">Worst</input>
+            <label for="">Would you recommend Twitter to your friends ?</label>
+            <select id="dropdown" name="recommend">
+              <option>Very likely</option>
+              <option>Maybe</option>
+              <option>Not sure</option>
+            </select>
+            <label for="">Your interests :</label>
+            <input type="checkbox" name="interests" value="Politics">
+            <input type="checkbox" name="interests" value="Finance">
+
+            <label for="">Additional Comments :</label> <textarea name="comments" rows="8" cols="80"></textarea>
+
+            <button type="submit" name="button" id="submit">Submit</button>
+            <button type="cancel" name="button">Cancel</button>
+          </form>
+        </div>
+
+      </div>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
